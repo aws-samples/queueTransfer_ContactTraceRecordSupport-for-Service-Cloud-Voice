@@ -5,7 +5,7 @@ Modifications have been made to the default ctrDataSync function code. These cha
 ## Deploy code
 Overwrite the utils.js and handler.js modules of the ctrDataSync CTI Adapter function in your AWS account that contains the Amazon Connect instance for your SCV Implementation.
 
-## Code Updates
+## Code Changes for default function
 Added QUEUE_TRANSFER to array on line 34 of handler.js to support processing of the QUEUE_TRANSFER call initiation method
 
-Added lines 80-86 in utils.js to modify the QUEUE_TRANSFER value of data passed to SCV to a supported type (TRANSFER).
+Added lines 80-86 in utils.js to modify the QUEUE_TRANSFER value of data passed to SCV to a supported type (TRANSFER). Optionally, add conditional for specific queues based on comment in code.
